@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@variant dark (&:is(.dark *));
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  /* Increased offset for better section spacing */
+}
+
+:root {
+  --background: var(--color-cream);
+  --foreground: var(--color-slate);
+  --gradient-dark: linear-gradient(90deg, #666666 0%, #000000 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-montserrat: var(--font-montserrat);
+
+  /* Typography scale — fluid with clamp(min, preferred, max) */
+  --font-size-type-xs: 14px;
+  --font-size-type-sm: clamp(16px, 0.875rem + 0.35vw, 18px);
+  --font-size-type-base: clamp(18px, 1rem + 0.5vw, 20px);
+  --font-size-type-md: clamp(20px, 1.125rem + 0.65vw, 24px);
+  --font-size-type-lg: clamp(24px, 1.375rem + 1vw, 30px);
+  --font-size-type-xl: clamp(30px, 1.75rem + 2vw, 50px);
+  --font-size-type-2xl: clamp(44px, 2.15rem + 3vw, 72px);
+
+  /* Color palette */
+  --color-sunflower: #FED34F;
+  --color-navy-dark: #0D2C54;
+  --color-white-muted: rgba(255, 255, 255, 0.2);
+  --color-white: #FFFFFF;
+  --color-midnight: #081B26;
+  --color-navy: #003561;
+  --color-slate: #4B5563;
+  --color-silver: #7D7E81;
+  --color-success: #2DA544;
+  --color-gray: #6B7280;
+  --color-charcoal: #374151;
+  --color-cream: #F3F0EA;
+  --color-amber: #FACC6B;
+  --color-gray-light: #F3F4F6;
+  --color-blue-deep: #052A68;
+  --color-blue-deep-soft: rgba(5, 42, 104, 0.9);
+  --color-honey: #FACA66;
+  --color-gray-medium: #9CA3AF;
+  --color-mint: #C0E4C7;
+  --color-gray-soft: #E5E7EB;
+  --color-ivory: #F2F0EA;
+  --color-cream-soft: rgba(243, 240, 234, 0.95);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-slate);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── Typography utility classes ── */
+.type-xs {
+  font-size: var(--font-size-type-xs);
+}
+
+.type-sm {
+  font-size: var(--font-size-type-sm);
+}
+
+.type-base {
+  font-size: var(--font-size-type-base);
+}
+
+.type-md {
+  font-size: var(--font-size-type-md);
+}
+
+.type-lg {
+  font-size: var(--font-size-type-lg);
+}
+
+.type-xl {
+  font-size: var(--font-size-type-xl);
+}
+
+.type-2xl {
+  font-size: var(--font-size-type-2xl);
+}
+
+/* ── Font family utility classes ── */
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat), sans-serif;
+}
