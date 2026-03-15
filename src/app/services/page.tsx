@@ -7,7 +7,7 @@ import PestsWeTreat from "../components/PestsWeTreat";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TrustedCertified from "../components/TrustedCertified";
 import Testimonials from "../components/Testimonials";
-import QuoteFormSection from "../components/QuoteFormSection";
+
 import Footer from "../components/Footer";
 import ServiceBox from "../components/ServiceBox";
 
@@ -54,7 +54,7 @@ export default function Services() {
           imageSrc="/assets/pest-patrol_sr_01.png"
           imageAlt="Common Pest Problems Collage"
           actions={[
-            { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+            { label: "GET A QUOTE", href: "/contact", variant: "navy" },
             { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
           ]}
         />
@@ -75,7 +75,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_02.png"
             description="Ants are one of the most common household pests in Auckland. Our treatments eliminate the nest and stop ants returning to your kitchen and outdoor areas."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -87,7 +87,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_03.png"
             description="Cockroaches hide in warm areas like kitchens, laundries, and bathrooms. Our professional treatments eliminate infestations and prevent them spreading."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -99,7 +99,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_04.png"
             description="Rats and mice can cause serious damage and health risks. We locate entry points, remove rodents, and implement prevention solutions."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -111,7 +111,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_05.png"
             description="Fleas can quickly spread through carpets, pets, and furniture. Our treatment removes fleas at every stage of their life cycle."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -123,7 +123,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_06.png"
             description="Wasps can become aggressive and dangerous around homes and outdoor areas. Our technicians safely remove nests and treat areas to stop them returning."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -135,7 +135,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_07.png"
             description="Spiders often enter homes looking for food and shelter. Our treatments reduce spider populations and prevent new infestations."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -147,7 +147,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_08.png"
             description="Borer insects damage timber structures and furniture. Our specialised treatments help protect your property from further damage."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -159,7 +159,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_09.png"
             description="Bed bugs are difficult to eliminate without professional help. We use targeted treatments designed to remove infestations completely."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -171,7 +171,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_10.png"
             description="Birds nesting in roofs and gutters can cause mess and property damage. We provide humane solutions to stop birds returning."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -183,7 +183,7 @@ export default function Services() {
             imageSrc="/assets/pest-patrol_sr_11.png"
             description="For customers looking for lower-toxicity treatments, we offer organic pest control options where suitable."
             actions={[
-                { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
                 { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
             ]}
         />
@@ -222,8 +222,7 @@ export default function Services() {
         {/* CUSTOMER TESTIMONIALS */}
         <Testimonials />
 
-        {/* QUOTE SECTION */}
-        <QuoteFormSection />
+
       </main>
       <Footer />
     </>

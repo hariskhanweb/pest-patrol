@@ -38,7 +38,7 @@ export default function ImageWithText({
   imageSrc = "/assets/pest_collage.png",
   imageAlt = "Common Pest Problems Collage",
   actions = [
-    { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+    { label: "GET A QUOTE", href: "/contact", variant: "navy" },
     { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" },
   ],
   imagePosition = "right",

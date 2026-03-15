@@ -26,7 +26,7 @@ export default function ServiceBox({
   imageSrc = "/assets/ant_control.png",
   imageAlt = "Ant Control Service",
   actions = [
-    { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+    { label: "GET A QUOTE", href: "/contact", variant: "navy" },
     { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" },
   ],
   imagePosition = "right",

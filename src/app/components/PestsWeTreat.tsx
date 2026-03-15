@@ -49,9 +49,16 @@ export default function PestsWeTreat({
     { label: "Organic Solutions", href: "/services#organic-solutions" }
   ],
   images = [
-    "/assets/hero_background_van.png",
-    "/assets/hero_technicians.png",
-    "/assets/worker_technician.png"
+    "/assets/pest-patrol_sr_02.png ",
+    "/assets/pest-patrol_sr_03.png",
+    "/assets/pest-patrol_sr_04.png",
+    "/assets/pest-patrol_sr_05.png",
+    "/assets/pest-patrol_sr_06.png",
+    "/assets/pest-patrol_sr_07.png",
+    "/assets/pest-patrol_sr_08.png",
+    "/assets/pest-patrol_sr_09.png",
+    "/assets/pest-patrol_sr_10.png",
+    "/assets/pest-patrol_sr_11.png",
   ],
   actions = [
     { label: "GET A QUOTE", href: "/quote", variant: "navy" },

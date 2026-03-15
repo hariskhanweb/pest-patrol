@@ -10,6 +10,7 @@ export interface HeroAction {
 
 interface HeroProps {
   ads?: boolean;
+  size?: "full" | "half";
   title?: React.ReactNode;
   offerHighlight?: React.ReactNode;
   offerText?: React.ReactNode;
@@ -24,6 +25,7 @@ interface HeroProps {
 
 export default function Hero({
   ads = false,
+  size = "full",
   title = (
     <>
       Your Local Pest<br className="hidden sm:block" /> Problem Solvers.
@@ -36,7 +38,7 @@ export default function Hero({
     </>
   ),
   actions = [
-    { label: "GET A QUOTE", href: "#quote", variant: "white" },
+    { label: "GET A QUOTE", href: "/contact", variant: "white" },
     { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "solid" },
   ],
   imageSrc,
@@ -49,10 +51,11 @@ export default function Hero({
   // Use specific images based on variant if no custom image is provided
   const activeImageSrc = imageSrc || (ads ? "/assets/hero_background_van.png" : "/assets/hero_technicians.png");
   const activeImageAlt = imageAlt || (ads ? "Pest Patrol Technicians" : "Pest Patrol Service Van");
+  const minHeightClass = size === "half" ? "min-h-[40vh] md:min-h-[50vh]" : "min-h-[calc(100vh-140px)]";
 
   if (!ads) {
     return (
-      <section className="relative w-full min-h-[calc(100vh-140px)] flex items-center py-16 md:py-24 overflow-hidden">
+      <section className={`relative w-full ${minHeightClass} flex items-center py-16 md:py-24 overflow-hidden`}>
         {/* Background Image */}
         <div className="absolute inset-0 z-0 bg-navy-dark">
           <Image
@@ -119,7 +122,7 @@ export default function Hero({
 
   // Variant: ads={true}
   return (
-    <section className="w-full bg-navy-dark py-16 md:py-24 min-h-[calc(100vh-140px)]">
+    <section className={`w-full bg-navy-dark py-16 md:py-24 ${minHeightClass}`}>
       <div className="mx-auto w-full max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         {/* Left Column: Content */}
         <div className="flex flex-col items-start text-left gap-8">

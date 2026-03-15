@@ -7,7 +7,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import PestsWeTreat from "../components/PestsWeTreat";
 import TrustedCertified from "../components/TrustedCertified";
 import Testimonials from "../components/Testimonials";
-import QuoteFormSection from "../components/QuoteFormSection";
+
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
@@ -23,10 +23,13 @@ export default function About() {
       <main className="flex flex-col">
         <Hero 
           ads={false} 
+          size="half"
           title="About Us."
           imageSrc="/assets/hero_background_van.png"
           imageAlt="Pest Patrol Service Van"
-          caption="Locally Owned & Operated"
+          actions={[]}
+          offerHighlight={null}
+          offerText={null}
         />
         <Strip variant="navy" />
         
@@ -57,10 +60,10 @@ export default function About() {
               </p>
             </>
           }
-          imageSrc="/assets/worker_technician.png"
+          imageSrc="/assets/hero_technicians.png"
           imageAlt="Pest Patrol Technician at Work"
           actions={[
-            { label: "GET A QUOTE", href: "#quote", variant: "navy" },
+            { label: "GET A QUOTE", href: "/contact", variant: "navy" },
             { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
           ]}
         />
@@ -138,8 +141,7 @@ export default function About() {
         {/* CUSTOMER TESTIMONIALS */}
         <Testimonials />
 
-        {/* QUOTE SECTION */}
-        <QuoteFormSection />
+
       </main>
       <Footer />
     </>

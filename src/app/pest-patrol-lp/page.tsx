@@ -7,7 +7,7 @@ import PestsWeTreat from "../components/PestsWeTreat";
 import WhyChooseUs from "../components/WhyChooseUs";
 import TrustedCertified from "../components/TrustedCertified";
 import Testimonials from "../components/Testimonials";
-import QuoteFormSection from "../components/QuoteFormSection";
+
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
@@ -99,8 +99,7 @@ export default function PestPatrolLP() {
         {/* CUSTOMER TESTIMONIALS */}
         <Testimonials />
 
-        {/* QUOTE SECTION */}
-        <QuoteFormSection />
+
       </main>
       <Footer />
     </>

@@ -60,7 +60,7 @@ export default function Footer({
   )
 }: FooterProps) {
   return (
-    <footer className="w-full bg-cream py-16 md:py-20 lg:py-24">
+    <footer className="w-full bg-cream pt-16 md:pt-20 lg:pt-24 pb-9 border-t border-navy-dark/10">
       <div className="mx-auto w-full max-w-7xl px-6">
         <div className="flex flex-col md:flex-row gap-12 md:gap-8 border-b border-navy-dark/10 pb-16">
           {/* Left Column: Navigation Links */}
