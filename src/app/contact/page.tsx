@@ -61,17 +61,32 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex flex-col">
-                    <label className="text-navy-dark mb-1 font-bold text-sm">Choose Service *</label>
-                    <div className="relative">
-                      <select className="w-full bg-white border border-gray-200 rounded px-4 py-3 font-inter type-sm text-navy-dark outline-none focus:border-sunflower focus:ring-1 focus:ring-sunflower transition-all appearance-none shadow-sm" required>
-                        <option value="">Select Service</option>
-                        <option value="insect">Insect Treatment</option>
-                        <option value="rodent">Rodent Control</option>
-                        <option value="termite">Termite Inspection</option>
-                      </select>
-                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-navy-dark/40">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
-                      </div>
+                    <label className="text-navy-dark mb-2 font-bold text-sm">Choose Service(s) *</label>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 px-1">
+                      {[
+                        { id: 'ants', label: 'Ant Control' },
+                        { id: 'cockroaches', label: 'Cockroach Control' },
+                        { id: 'rodents', label: 'Rodent Control' },
+                        { id: 'fleas', label: 'Flea Treatment' },
+                        { id: 'wasps', label: 'Wasp Nest Removal' },
+                        { id: 'spiders', label: 'Spider Control' },
+                        { id: 'borer', label: 'Borer Treatment' },
+                        { id: 'bed-bugs', label: 'Bed Bug Treatment' },
+                        { id: 'birds', label: 'Bird Control' },
+                        { id: 'flies', label: 'Flies Treatment' },
+                        { id: 'organic', label: 'Organic Pest Solutions' },
+                        { id: 'other', label: 'Other/Not Sure' },
+                      ].map((service) => (
+                        <label key={service.id} className="flex items-center gap-2 cursor-pointer group">
+                          <input 
+                            type="checkbox" 
+                            name="services" 
+                            value={service.id}
+                            className="w-4 h-4 text-sunflower bg-white border-gray-300 rounded focus:ring-sunflower focus:ring-2 cursor-pointer"
+                          />
+                          <span className="text-sm text-gray-700 group-hover:text-navy-dark transition-colors">{service.label}</span>
+                        </label>
+                      ))}
                     </div>
                   </div>
                   

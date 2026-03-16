@@ -24,6 +24,7 @@ export default function Home() {
         <Hero 
           ads={false} 
           title="Fast & Reliable Termite Control."
+          description="Aucklands most trusted pest control company."
           imageSrc="/assets/hero_background_van.png"
           imageAlt="Pest Patrol Service Van"
           caption="Locally Owned & Operated"

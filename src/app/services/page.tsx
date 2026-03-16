@@ -188,6 +188,18 @@ export default function Services() {
             ]}
         />
         
+        <ServiceBox 
+            id="flies"
+            title="Flies Treatment"
+            imagePosition="right"
+            imageSrc="/assets/flies-unsplash.jpg"
+            description="Flies can quickly become a nuisance in homes and businesses, contaminating food and surfaces while spreading harmful bacteria. Our professional fly treatment targets breeding sites and resting areas, helping to reduce fly populations and prevent future infestations. We use safe and effective methods to keep your environment clean, hygienic, and comfortable."
+            actions={[
+                { label: "GET A QUOTE", href: "/contact", variant: "navy" },
+                { label: "CALL 027 943 0777", href: "tel:0279430777", variant: "yellow" }
+            ]}
+        />
+
         </section>
 
         {/* WHY CHOOSE US */}
